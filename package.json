@@ -11,7 +11,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint dam2-di-1T",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
@@ -38,4 +40,3 @@
     "vite": "^7.1.7"
   }
 }
-
