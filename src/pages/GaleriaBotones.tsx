@@ -23,7 +23,7 @@ export default function GaleriaBotones() {
 
                         <Boton titulo="Botón ancho completo" tipo="primary" handleOnClick={(evt)=>{
                             evt.preventDefault();
-                            alert("Has guardado los cambios");
+                            alert("Aqui tiene más ancho y completo el boton");
                         }}/>
                     </div>
                 </section>
@@ -32,9 +32,15 @@ export default function GaleriaBotones() {
                 <section className="space-y-3">
                     <h2 className="font-semibold">Botones secundarios</h2>
                     <div className="flex flex-wrap gap-3">
-                        <Boton titulo="Cancelar" tipo="secundary"/>
+                        <Boton titulo="Cancelar" tipo="secundary" handleOnClick={(evt)=>{
+                            evt.preventDefault();
+                            alert("Ha sido cancelado");
+                        }}/>
 
-                        <Boton titulo="Ver detalles" tipo="secundary"/>
+                        <Boton titulo="Ver detalles" tipo="secundary" handleOnClick={(evt)=>{
+                            evt.preventDefault();
+                            alert("Aqui puede ver los detalles");
+                        }}/>
                     </div>
                 </section>
 
@@ -43,9 +49,15 @@ export default function GaleriaBotones() {
                     <h2 className="font-semibold">Botones de peligro</h2>
                     <div className="flex flex-wrap gap-3">
 
-                        <Boton titulo="Eliminar" tipo="danger"/>
+                        <Boton titulo="Eliminar" tipo="danger" handleOnClick={(evt)=>{
+                            evt.preventDefault();
+                            alert("Ha eliminado correctamente");
+                        }}/>
 
-                        <Boton titulo="Borrar cuenta" tipo="danger"/>
+                        <Boton titulo="Borrar cuenta" tipo="danger" handleOnClick={(evt)=>{
+                            evt.preventDefault();
+                            alert("Ha borrado la cuenta correctamente");
+                        }}/>
                     </div>
                 </section>
             </div>
