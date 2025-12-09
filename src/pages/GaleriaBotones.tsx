@@ -3,7 +3,7 @@ import Boton from "@/components/Boton";
 
 export default function GaleriaBotones() {
     return <>
-        <body className="min-h-screen bg-slate-100 flex items-center justify-center"></body>
+        <div className="min-h-screen bg-slate-100 flex items-center justify-center">
             <div className="bg-white shadow-lg rounded-xl p-6 max-w-3xl w-full space-y-6">
                 <h1 className="text-2xl font-bold">Galería de botones</h1>
 
@@ -61,5 +61,6 @@ export default function GaleriaBotones() {
                     </div>
                 </section>
             </div>
+        </div>
     </>
 }
